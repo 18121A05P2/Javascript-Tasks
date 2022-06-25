@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div>
+        <div class="search-bar">
+            <h3 style="text-align:center">YouTube</h3>
+            <input id="search" type="text" placeholder="Search">
+            <button id="clickbutton" onclick="getvideos(load)">Search</button>
+        </div>
+        <script src="script.js"></script>
+        <div id="videos" class="video">
+        </div>
+        <button id="nextbutton" hidden="hidden" onclick="getvideos(getNext)">Next</button>
+        <button id="prevbutton" hidden="hidden" onclick="getvideos(getPrev)">Prev</button>
+
+    </div>
+</body>
+
+</html>
